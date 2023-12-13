@@ -8,14 +8,17 @@ import com.mygdx.game.pantallas.PantallaJuego;
 import com.mygdx.game.pantallas.PantallaMenu;
 import com.mygdx.game.utiles.Render;
 
+import red.UtilesRed;
+
 public class KillThemAll extends Game {
-	
+	public SpriteBatch batch;
 //SpriteBatch batch;
 
 	@Override
 	public void create () {
 		Render.app = this;
-		Render.batch = new SpriteBatch();
+		batch = new SpriteBatch();
+		Render.batch = batch;
 				
 		this.setScreen(new PantallaMenu());
 	//	this.setScreen(new PantallaJuego());
@@ -44,6 +47,7 @@ public class KillThemAll extends Game {
 	public void dispose () {	
 		Render.batch.dispose();
 //		super.dispose();
+		UtilesRed.hc.fin();//Aca tengo que cerrar el hilo asi no me queda abierto en segundo plano
 	
 	}
 

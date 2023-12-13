@@ -9,12 +9,12 @@ public class DesktopLauncher {
 		
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 		
-		config.setWindowedMode(Configuracion.ANCHO, Configuracion.ALTO);
+		config.setWindowedMode(Configuracion.ancho, Configuracion.alto);
 		
 		config.setTitle("Kill Them All");
 //		config.height= Configuracion.ALTO;
 //		config.width= Configuracion.ANCHO;
-		config.setResizable(false);
+		config.setResizable(true);
 		config.setForegroundFPS(60);
 //		config.vSyncEnabled = true;
 		

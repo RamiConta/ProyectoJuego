@@ -12,10 +12,8 @@ public class Entradas implements InputProcessor {
 	
 	PantallaMenu app;
 	
-	private PantallaJuego pantallaJuego;  // Cambié la referencia 
 	
-	 public Entradas(PantallaJuego pantallaJuego) {
-	        this.pantallaJuego = pantallaJuego;
+	 public Entradas() {
 	}
 	 
 	public Entradas(PantallaMenu app) {
@@ -66,7 +64,7 @@ public class Entradas implements InputProcessor {
 	public boolean mouseMoved(int screenX, int screenY) {
 		
 		mouseX = screenX;
-		mouseY = Configuracion.ALTO - screenY;
+		mouseY = Configuracion.alto - screenY;
 		
 		return false;
 	}

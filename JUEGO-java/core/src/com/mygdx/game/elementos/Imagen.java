@@ -20,7 +20,7 @@ public class Imagen {
 	}
 	
 	public void setSize(float ancho, float alto) {
-		sprite.setSize(Configuracion.ANCHO, Configuracion.ALTO);
+		sprite.setSize(Configuracion.ancho, Configuracion.alto);
 		
 	}
 }

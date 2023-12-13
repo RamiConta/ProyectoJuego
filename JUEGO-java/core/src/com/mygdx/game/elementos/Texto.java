@@ -46,6 +46,11 @@ public class Texto {
 		fuente.setColor(color); //le pasamos como parametro el color que le asignamos en el render
 	}
 	
+	public void resize(float width, float height) {
+		layout.width = width;
+		layout.height = height;
+	}
+	
 	public void setPosition(float x, float y) {
 		this.x = x;
 		this.y = y;
